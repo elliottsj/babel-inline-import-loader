@@ -6,9 +6,19 @@
   "repository": "git@github.com:elliottsj/babel-inline-import-loader.git",
   "author": "Spencer Elliott <me@elliottsj.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "cd example && webpack-dev-server"
+  },
   "dependencies": {
     "babel-traverse": "^6.25.0",
     "babel-types": "^6.25.0",
     "babylon": "^6.17.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-inline-import": "git+https://github.com/elliottsj/babel-plugin-inline-import.git#leading-comment-path",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
   }
 }
