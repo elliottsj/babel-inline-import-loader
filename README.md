@@ -94,7 +94,7 @@ Run `npm start` and open http://localhost:8080/. Edit [example.txt](example/exam
 
 ### How does it work?
 
-babel-inline-import-loader depends on [babel-plugin-inline-import#9999](https://github.com/Quadric/babel-plugin-inline-import/pull/9999), so that a comment block specifying the original module path is included next to the inlined import. For example,
+babel-inline-import-loader depends on [babel-plugin-inline-import#10](https://github.com/Quadric/babel-plugin-inline-import/pull/10), so that a comment block specifying the original module path is included next to the inlined import. For example,
 
 ```js
 import example from './example.txt';
