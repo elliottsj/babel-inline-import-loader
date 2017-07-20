@@ -7,7 +7,10 @@
   "author": "Spencer Elliott <me@elliottsj.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cd example && webpack-dev-server"
+    "jest": "jest",
+    "lint": "eslint .",
+    "start": "cd example && webpack-dev-server",
+    "test": "npm run lint && npm run jest"
   },
   "dependencies": {
     "babel-traverse": "^6.25.0",
@@ -17,8 +20,12 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
-    "babel-plugin-inline-import": "git+https://github.com/elliottsj/babel-plugin-inline-import.git#leading-comment-path",
-    "webpack": "^3.2.0",
+    "babel-plugin-inline-import": "^2.0.6",
+    "eslint": "^4.2.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "jest": "^20.0.4",
+    "prettier": "^1.5.3",
+    "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   }
 }
