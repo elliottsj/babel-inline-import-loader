@@ -1,6 +1,7 @@
 # babel-inline-import-loader
 
 [![npm version](https://img.shields.io/npm/v/babel-inline-import-loader.svg)](https://www.npmjs.com/package/babel-inline-import-loader)
+[![Travis CI Build Status](https://travis-ci.org/elliottsj/combine-loader.svg?branch=master)](https://travis-ci.org/elliottsj/combine-loader)
 
 A webpack loader enabling files imported by [babel-plugin-inline-import](https://github.com/quadric/babel-plugin-inline-import) to trigger rebuilds when content changes.
 
