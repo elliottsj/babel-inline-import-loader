@@ -1,8 +1,7 @@
 'use strict';
 
-const path = require('path');
-
 module.exports = {
+  context: __dirname,
   entry: './index.js',
   output: {
     path: __dirname,
@@ -19,14 +18,17 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               plugins: [
-                ['inline-import', {
-                  extensions: ['.txt']
-                }]
-              ]
-            }
-          }
-        ]
-      }
-    ]
+                [
+                  'inline-import',
+                  {
+                    extensions: ['.txt'],
+                  },
+                ],
+              ],
+            },
+          },
+        ],
+      },
+    ],
   },
 };
