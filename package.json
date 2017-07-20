@@ -17,7 +17,7 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
-    "babel-plugin-inline-import": "git+https://github.com/elliottsj/babel-plugin-inline-import.git#leading-comment-path",
+    "babel-plugin-inline-import": "^2.0.6",
     "webpack": "^3.2.0",
     "webpack-dev-server": "^2.5.1"
   }

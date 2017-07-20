@@ -6,7 +6,7 @@ A webpack loader enabling files imported by [babel-plugin-inline-import](https:/
 
 ### Installation
 
-First install [babel-plugin-inline-import](https://github.com/quadric/babel-plugin-inline-import). Then:
+First install [babel-plugin-inline-import@2.0.6](https://github.com/quadric/babel-plugin-inline-import) or later. Then:
 
 ```shell
 npm install babel-inline-import-loader --save-dev
@@ -60,7 +60,7 @@ module.exports = {
     const rulesExceptBabelLoaderRule = config.module.rules.slice(0, -1);
     const babelLoaderRule = config.module.rules.slice(-1)[0];
 
-    const newConfig = Object.assign({}, config, {
+    return Object.assign({}, config, {
       module: Object.assign({}, config.module, {
         rules: [
           ...rulesExceptBabelLoaderRule,
@@ -83,7 +83,6 @@ module.exports = {
         ],
       }),
     });
-    return newConfig;
   },
 };
 ```
