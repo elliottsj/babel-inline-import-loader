@@ -59,32 +59,37 @@ module.exports = {
   webpack: config => {
     // The main 'babel-loader' rule is the last rule in the array as of next@2.4.7
     // This may change in future versions
-    const rulesExceptBabelLoaderRule = config.module.rules.slice(0, -1);
-    const babelLoaderRule = config.module.rules.slice(-1)[0];
+    
+    const rulesExceptBabelLoaderRule = config.module.rules.filter(
+        rule => rule.loader !== 'babel-loader'
+      );
+      const babelLoaderRule = config.module.rules.filter(
+        rule => rule.loader === 'babel-loader'
+      )[1];
 
-    return Object.assign({}, config, {
-      module: Object.assign({}, config.module, {
-        rules: [
-          ...rulesExceptBabelLoaderRule,
-          {
-            test: babelLoaderRule.test,
-            include: babelLoaderRule.include,
-            exclude: babelLoaderRule.exclude,
-            use: [
-              'babel-inline-import-loader',
-              {
-                loader: 'babel-loader',
-                options: Object.assign({}, babelLoaderRule.options, {
-                  // Disable cacheDirectory so that Babel
-                  // always rebuilds dependent modules
-                  cacheDirectory: false,
-                }),
-              },
-            ],
-          },
-        ],
-      }),
-    });
+      return Object.assign({}, config, {
+        module: Object.assign({}, config.module, {
+          rules: [
+            ...rulesExceptBabelLoaderRule,
+            {
+              test: babelLoaderRule.test,
+              include: babelLoaderRule.include,
+              exclude: babelLoaderRule.exclude,
+              use: [
+                'babel-inline-import-loader',
+                {
+                  loader: 'babel-loader',
+                  options: Object.assign({}, babelLoaderRule.options, {
+                    // Disable cacheDirectory so that Babel
+                    // always rebuilds dependent modules
+                    cacheDirectory: false
+                  })
+                }
+              ]
+            }
+          ]
+        })
+      });
   },
 };
 ```
