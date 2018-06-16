@@ -23,7 +23,7 @@
     "babel-plugin-inline-import": "^2.0.6",
     "eslint": "^4.2.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "jest": "^21.0.0",
+    "jest": "^22.0.0",
     "prettier": "^1.5.3",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
