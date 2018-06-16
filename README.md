@@ -8,7 +8,7 @@ A webpack loader enabling files imported by [babel-plugin-inline-import](https:/
 
 ### Installation
 
-First install [babel-plugin-inline-import@2.0.6](https://github.com/quadric/babel-plugin-inline-import) or later. Then:
+First install [babel-plugin-inline-import@3.0.0](https://github.com/quadric/babel-plugin-inline-import) or later. Then:
 
 ```shell
 npm install babel-inline-import-loader --save-dev
@@ -56,36 +56,33 @@ In [Next.js](https://github.com/zeit/next.js), add the following to your `next.c
 ```js
 module.exports = {
   // ...
-  webpack: config => {
-    // The main 'babel-loader' rule is the last rule in the array as of next@2.4.7
-    // This may change in future versions
-    const rulesExceptBabelLoaderRule = config.module.rules.slice(0, -1);
-    const babelLoaderRule = config.module.rules.slice(-1)[0];
+  webpack: (config, { defaultLoaders, dir }) => {
+    const rulesExceptBabelLoaderRule = config.module.rules.filter(
+      rule => rule.use !== defaultLoaders.babel
+    );
 
-    return Object.assign({}, config, {
-      module: Object.assign({}, config.module, {
-        rules: [
-          ...rulesExceptBabelLoaderRule,
+    config.module.rules = [
+      ...rulesExceptBabelLoaderRule,
+      {
+        test: /\.(js|jsx)$/,
+        include: [dir],
+        exclude: /node_modules/,
+        use: [
+          'babel-inline-import-loader',
           {
-            test: babelLoaderRule.test,
-            include: babelLoaderRule.include,
-            exclude: babelLoaderRule.exclude,
-            use: [
-              'babel-inline-import-loader',
-              {
-                loader: 'babel-loader',
-                options: Object.assign({}, babelLoaderRule.options, {
-                  // Disable cacheDirectory so that Babel
-                  // always rebuilds dependent modules
-                  cacheDirectory: false,
-                }),
-              },
-            ],
-          },
-        ],
-      }),
-    });
-  },
+            ...defaultLoaders.babel,
+            options: {
+              ...defaultLoaders.babel.options,
+              // Disable cacheDirectory so that Babel
+              // always rebuilds dependent modules
+              cacheDirectory: false
+            }
+          }
+        ]
+      }
+    ];
+    return config;
+  }
 };
 ```
 
