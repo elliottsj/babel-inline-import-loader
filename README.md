@@ -1,8 +1,6 @@
 # babel-inline-import-loader
 
 [![npm version](https://img.shields.io/npm/v/babel-inline-import-loader.svg)](https://www.npmjs.com/package/babel-inline-import-loader)
-[![Travis CI Build Status](https://travis-ci.org/elliottsj/combine-loader.svg?branch=master)](https://travis-ci.org/elliottsj/combine-loader)
-[![Greenkeeper badge](https://badges.greenkeeper.io/elliottsj/babel-inline-import-loader.svg)](https://greenkeeper.io/)
 
 A webpack loader enabling files imported by [babel-plugin-inline-import](https://github.com/quadric/babel-plugin-inline-import) to trigger rebuilds when content changes.
 
@@ -58,7 +56,7 @@ module.exports = {
   // ...
   webpack: (config, { defaultLoaders, dir }) => {
     const rulesExceptBabelLoaderRule = config.module.rules.filter(
-      rule => rule.use !== defaultLoaders.babel
+      (rule) => rule.use !== defaultLoaders.babel
     );
 
     config.module.rules = [
@@ -75,14 +73,14 @@ module.exports = {
               ...defaultLoaders.babel.options,
               // Disable cacheDirectory so that Babel
               // always rebuilds dependent modules
-              cacheDirectory: false
-            }
-          }
-        ]
-      }
+              cacheDirectory: false,
+            },
+          },
+        ],
+      },
     ];
     return config;
-  }
+  },
 };
 ```
 
@@ -92,14 +90,16 @@ Run `npm start` and open http://localhost:8080/. Edit [example.txt](example/exam
 
 ### How does it work?
 
-babel-inline-import-loader depends on [babel-plugin-inline-import#10](https://github.com/Quadric/babel-plugin-inline-import/pull/10), so that a comment block specifying the original module path is included next to the inlined import. For example,
+babel-inline-import-loader depends on [babel-plugin-inline-import#10](https://github.com/feats/babel-plugin-inline-import/pull/10), so that a comment block specifying the original module path is included next to the inlined import. For example,
 
 ```js
 import example from './example.txt';
 ```
+
 is compiled to
+
 ```js
-/* babel-plugin-inline-import './example.txt' */const example = 'hello world';
+/* babel-plugin-inline-import './example.txt' */ const example = 'hello world';
 ```
 
 babel-inline-import-loader then parses the value `'./example.txt'` from the comment and includes that file in webpack's dependency graph via [`this.addDependency`](https://webpack.js.org/api/loaders/#this-adddependency).

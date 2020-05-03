@@ -1,16 +1,16 @@
 'use strict';
 
-const babylon = require('babylon');
-const traverse = require('babel-traverse').default;
-const t = require('babel-types');
+const parser = require('@babel/parser');
+const traverse = require('@babel/traverse').default;
+const t = require('@babel/types');
 const path = require('path');
 
-module.exports = function(content) {
-  const ast = babylon.parse(content, {
+module.exports = function (content) {
+  const ast = parser.parse(content, {
     sourceType: 'module',
   });
   traverse(ast, {
-    enter: astPath => {
+    enter: (astPath) => {
       const node = astPath.node;
       if (!t.isVariableDeclaration(node)) {
         return;
