@@ -19,7 +19,7 @@
     "@babel/types": "^7.9.6"
   },
   "devDependencies": {
-    "@babel/core": "7.9.6",
+    "@babel/core": "7.10.0",
     "babel-loader": "8.1.0",
     "babel-plugin-inline-import": "3.0.0",
     "jest": "24.9.0",
