@@ -22,7 +22,9 @@ it('invalidates webpack build upon changing an inline imported file', () =>
       }
       // Modified example.txt triggered another build
       watcher.close(() => {
-        resolve();
+        setTimeout(() => {
+          resolve();
+        }, 3000);
       });
     });
   }));
