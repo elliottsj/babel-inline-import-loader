@@ -21,22 +21,29 @@ module.exports = function (content) {
       if (node.leadingComments.length === 0) {
         return;
       }
-      if (node.leadingComments[0].type !== 'CommentBlock') {
-        return;
-      }
-      if (
-        !node.leadingComments[0].value.startsWith(
-          ' babel-plugin-inline-import '
+
+      // `node` is a variable declaration which was transpiled from an import statement.
+      // Any leading comments which start with ' babel-plugin-inline-import ' were inserted by
+      // babel-plugin-inline-import, e.g.
+      //
+      //   /* babel-plugin-inline-import './example.txt' */ const example = 'hello world';
+      //
+      // Extract the path embedded in the comment (e.g. './example.txt' above) and add it as a
+      // webpack dependency.
+      node.leadingComments
+        .filter(
+          (leadingComment) =>
+            leadingComment.type === 'CommentBlock' &&
+            leadingComment.value.startsWith(' babel-plugin-inline-import ')
         )
-      ) {
-        return;
-      }
-      const modulePath = node.leadingComments[0].value.match(/'(.*)'/)[1];
-      const absolutePath = path.resolve(
-        path.dirname(this.resourcePath),
-        modulePath
-      );
-      this.addDependency(absolutePath);
+        .forEach((leadingComment) => {
+          const modulePath = leadingComment.value.match(/'(.*)'/)[1];
+          const absolutePath = path.resolve(
+            path.dirname(this.resourcePath),
+            modulePath
+          );
+          this.addDependency(absolutePath);
+        });
     },
   });
   return content;
