@@ -1,6 +1,6 @@
 {
   "name": "babel-inline-import-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack loader enabling files imported by babel-plugin-inline-import to trigger rebuilds when content changes",
   "main": "index.js",
   "repository": "git@github.com:elliottsj/babel-inline-import-loader.git",
