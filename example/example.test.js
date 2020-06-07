@@ -5,6 +5,18 @@ const path = require('path');
 const webpack = require('webpack');
 const config = require('./webpack.config');
 
+const EXAMPLE_TXT_PATH = path.resolve(__dirname, './example.txt');
+
+let exampleTxtContent;
+
+beforeAll(() => {
+  exampleTxtContent = fs.readFileSync(EXAMPLE_TXT_PATH);
+});
+
+afterAll(() => {
+  fs.writeFileSync(EXAMPLE_TXT_PATH, exampleTxtContent);
+});
+
 it('invalidates webpack build upon changing an inline imported file', () =>
   new Promise((resolve, reject) => {
     const compiler = webpack(config);
@@ -16,7 +28,7 @@ it('invalidates webpack build upon changing an inline imported file', () =>
       }
       if (initialBuild) {
         // Modify example.txt to trigger another build
-        fs.appendFileSync(path.resolve(__dirname, './example.txt'), 'foo\n');
+        fs.appendFileSync(EXAMPLE_TXT_PATH, 'foo\n');
         initialBuild = false;
         return;
       }
