@@ -24,7 +24,7 @@
     "babel-plugin-inline-import": "3.0.0",
     "jest": "26.2.2",
     "prettier": "2.0.5",
-    "webpack": "4.44.0",
+    "webpack": "4.44.1",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
   },
