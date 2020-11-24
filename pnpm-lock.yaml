@@ -3,8 +3,8 @@ dependencies:
   '@babel/traverse': 7.9.6
   '@babel/types': 7.9.6
 devDependencies:
-  '@babel/core': 7.12.8
-  babel-loader: 8.1.0_@babel+core@7.12.8+webpack@5.6.0
+  '@babel/core': 7.12.9
+  babel-loader: 8.1.0_@babel+core@7.12.9+webpack@5.6.0
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.1.2
@@ -48,7 +48,7 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-0qXcZYKZp3/6N2jKYVxZv0aNCsxTSVCiK72DTiTYZAu7sjg73W0/aynWjMbiGd87EQL4WyA8reiJVh92AVla9g==
-  /@babel/core/7.12.8:
+  /@babel/core/7.12.9:
     dependencies:
       '@babel/code-frame': 7.10.4
       '@babel/generator': 7.12.5
@@ -56,7 +56,7 @@ packages:
       '@babel/helpers': 7.12.5
       '@babel/parser': 7.12.7
       '@babel/template': 7.12.7
-      '@babel/traverse': 7.12.8
+      '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
       convert-source-map: 1.7.0
       debug: 4.1.1
@@ -70,7 +70,7 @@ packages:
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-ra28JXL+5z73r1IC/t+FT1ApXU5LsulFDnTDntNfLQaScJUJmcHL5Qxm/IWanCToQk3bPWQo5bflbplU5r15pg==
+      integrity: sha512-gTXYh3M5wb7FRXQy+FErKFAv90BnlOuNn1QkCK2lREoPAjrQCO49+HVSrFoe5uakFAF5eenS75KbO2vQiLrTMQ==
   /@babel/generator/7.12.1:
     dependencies:
       '@babel/types': 7.12.1
@@ -144,7 +144,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.11.0
       '@babel/helper-validator-identifier': 7.10.4
       '@babel/template': 7.12.7
-      '@babel/traverse': 7.12.8
+      '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
       lodash: 4.17.19
     dev: true
@@ -164,7 +164,7 @@ packages:
     dependencies:
       '@babel/helper-member-expression-to-functions': 7.12.1
       '@babel/helper-optimise-call-expression': 7.10.4
-      '@babel/traverse': 7.12.8
+      '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
     dev: true
     resolution:
@@ -206,7 +206,7 @@ packages:
   /@babel/helpers/7.12.5:
     dependencies:
       '@babel/template': 7.12.7
-      '@babel/traverse': 7.12.8
+      '@babel/traverse': 7.12.9
       '@babel/types': 7.12.7
     dev: true
     resolution:
@@ -401,7 +401,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MA3WPoRt1ZHo2ZmoGKNqi20YnPt0B1S0GTZEPhhd+hw2KGUzBlHuVunj6K4sNuK+reEvyiPwtp0cpaqLzJDmAw==
-  /@babel/traverse/7.12.8:
+  /@babel/traverse/7.12.9:
     dependencies:
       '@babel/code-frame': 7.10.4
       '@babel/generator': 7.12.5
@@ -414,7 +414,7 @@ packages:
       lodash: 4.17.19
     dev: true
     resolution:
-      integrity: sha512-EIRQXPTwFEGRZyu6gXbjfpNORN1oZvwuzJbxcXjAgWV0iqXYDszN1Hx3FVm6YgZfu1ZQbCVAk3l+nIw95Xll9Q==
+      integrity: sha512-iX9ajqnLdoU1s1nHt36JDI9KG4k+vmI8WgjK5d+aDTwQbL2fUnzedNedssA645Ede3PM2ma1n8Q4h2ohwXgMXw==
   /@babel/traverse/7.9.6:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -1249,9 +1249,9 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA==
-  /babel-loader/8.1.0_@babel+core@7.12.8+webpack@5.6.0:
+  /babel-loader/8.1.0_@babel+core@7.12.9+webpack@5.6.0:
     dependencies:
-      '@babel/core': 7.12.8
+      '@babel/core': 7.12.9
       find-cache-dir: 2.1.0
       loader-utils: 1.4.0
       mkdirp: 0.5.5
@@ -6213,7 +6213,7 @@ packages:
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
 specifiers:
-  '@babel/core': 7.12.8
+  '@babel/core': 7.12.9
   '@babel/parser': ^7.9.6
   '@babel/traverse': ^7.9.6
   '@babel/types': ^7.9.6
