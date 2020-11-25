@@ -4,7 +4,7 @@ dependencies:
   '@babel/types': 7.9.6
 devDependencies:
   '@babel/core': 7.12.9
-  babel-loader: 8.1.0_@babel+core@7.12.9+webpack@5.6.0
+  babel-loader: 8.2.1_@babel+core@7.12.9+webpack@5.6.0
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.1.2
@@ -1249,23 +1249,23 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA==
-  /babel-loader/8.1.0_@babel+core@7.12.9+webpack@5.6.0:
+  /babel-loader/8.2.1_@babel+core@7.12.9+webpack@5.6.0:
     dependencies:
       '@babel/core': 7.12.9
       find-cache-dir: 2.1.0
       loader-utils: 1.4.0
-      mkdirp: 0.5.5
+      make-dir: 2.1.0
       pify: 4.0.1
       schema-utils: 2.6.6
       webpack: 5.6.0_webpack-cli@4.2.0
     dev: true
     engines:
-      node: '>= 6.9'
+      node: '>= 8.9'
     peerDependencies:
       '@babel/core': ^7.0.0
       webpack: '>=2'
     resolution:
-      integrity: sha512-7q7nC1tYOrqvUrN3LQK4GwSk/TQorZSOlO9C+RZDZpODgyN4ZlCqE5q9cDsyWOliN+aU9B4JX01xK9eJXowJLw==
+      integrity: sha512-dMF8sb2KQ8kJl21GUjkW1HWmcsL39GOV5vnzjqrCzEPNY0S0UfMLnumidiwIajDSBmKhYf5iRW+HXaM4cvCKBw==
   /babel-plugin-inline-import/3.0.0:
     dependencies:
       require-resolve: 0.0.2
@@ -4944,8 +4944,8 @@ packages:
       integrity: sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==
   /schema-utils/2.6.6:
     dependencies:
-      ajv: 6.12.2
-      ajv-keywords: 3.4.1_ajv@6.12.2
+      ajv: 6.12.6
+      ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
     engines:
       node: '>= 8.9.0'
@@ -6217,7 +6217,7 @@ specifiers:
   '@babel/parser': ^7.9.6
   '@babel/traverse': ^7.9.6
   '@babel/types': ^7.9.6
-  babel-loader: 8.1.0
+  babel-loader: 8.2.1
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.1.2
