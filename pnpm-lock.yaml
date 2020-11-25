@@ -7,7 +7,7 @@ devDependencies:
   babel-loader: 8.1.0_@babel+core@7.12.9+webpack@5.6.0
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
-  prettier: 2.1.2
+  prettier: 2.2.0
   webpack: 5.6.0_webpack-cli@4.2.0
   webpack-cli: 4.2.0_92c1de40ab93c551b9f0c8f5b24f9291
   webpack-dev-server: 3.11.0_webpack-cli@4.2.0+webpack@5.6.0
@@ -4523,13 +4523,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/2.1.2:
+  /prettier/2.2.0:
     dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
+      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
   /pretty-format/26.6.2:
     dependencies:
       '@jest/types': 26.6.2
@@ -6220,7 +6220,7 @@ specifiers:
   babel-loader: 8.1.0
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
-  prettier: 2.1.2
+  prettier: 2.2.0
   webpack: 5.6.0
   webpack-cli: 4.2.0
   webpack-dev-server: 3.11.0
