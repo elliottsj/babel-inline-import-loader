@@ -4,7 +4,7 @@ dependencies:
   '@babel/types': 7.9.6
 devDependencies:
   '@babel/core': 7.12.9
-  babel-loader: 8.2.1_@babel+core@7.12.9+webpack@5.6.0
+  babel-loader: 8.2.2_@babel+core@7.12.9+webpack@5.6.0
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.2.0
@@ -1249,13 +1249,12 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA==
-  /babel-loader/8.2.1_@babel+core@7.12.9+webpack@5.6.0:
+  /babel-loader/8.2.2_@babel+core@7.12.9+webpack@5.6.0:
     dependencies:
       '@babel/core': 7.12.9
-      find-cache-dir: 2.1.0
+      find-cache-dir: 3.3.1
       loader-utils: 1.4.0
-      make-dir: 2.1.0
-      pify: 4.0.1
+      make-dir: 3.1.0
       schema-utils: 2.6.6
       webpack: 5.6.0_webpack-cli@4.2.0
     dev: true
@@ -1265,7 +1264,7 @@ packages:
       '@babel/core': ^7.0.0
       webpack: '>=2'
     resolution:
-      integrity: sha512-dMF8sb2KQ8kJl21GUjkW1HWmcsL39GOV5vnzjqrCzEPNY0S0UfMLnumidiwIajDSBmKhYf5iRW+HXaM4cvCKBw==
+      integrity: sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==
   /babel-plugin-inline-import/3.0.0:
     dependencies:
       require-resolve: 0.0.2
@@ -2439,16 +2438,16 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==
-  /find-cache-dir/2.1.0:
+  /find-cache-dir/3.3.1:
     dependencies:
       commondir: 1.0.1
-      make-dir: 2.1.0
-      pkg-dir: 3.0.0
+      make-dir: 3.1.0
+      pkg-dir: 4.2.0
     dev: true
     engines:
-      node: '>=6'
+      node: '>=8'
     resolution:
-      integrity: sha512-Tq6PixE0w/VMFfCgbONnkiQIVol/JJL7nRMi20fqzA4NRs9AfeqMGeRdPi3wIhYkxjeBaWh2rxwapn5Tu3IqOQ==
+      integrity: sha512-t2GDMt3oGC/v+BMwzmllWDuJF/xcDtE5j/fCGbqDD7OLuJkj0cfh1YSA5VKPvwMeLFLNDBkwOKZ2X85jGLVftQ==
   /find-up/3.0.0:
     dependencies:
       locate-path: 3.0.0
@@ -3879,15 +3878,6 @@ packages:
       node: '>= 0.6.0'
     resolution:
       integrity: sha512-bsU7+gc9AJ2SqpzxwU3+1fedl8zAntbtC5XYlt3s2j1hJcn2PsXSmgN8TaLG/J1/2mod4+cE/3vNL70/c1RNCA==
-  /make-dir/2.1.0:
-    dependencies:
-      pify: 4.0.1
-      semver: 5.7.1
-    dev: true
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==
   /make-dir/3.1.0:
     dependencies:
       semver: 6.3.0
@@ -6217,7 +6207,7 @@ specifiers:
   '@babel/parser': ^7.9.6
   '@babel/traverse': ^7.9.6
   '@babel/types': ^7.9.6
-  babel-loader: 8.2.1
+  babel-loader: 8.2.2
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.2.0
