@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': 7.14.2
+  '@babel/core': 7.14.3
   '@babel/parser': ^7.9.6
   '@babel/traverse': ^7.9.6
   '@babel/types': ^7.9.6
@@ -19,8 +19,8 @@ dependencies:
   '@babel/types': 7.9.6
 
 devDependencies:
-  '@babel/core': 7.14.2
-  babel-loader: 8.2.2_fc66b4cb463f767a2f0870d314f4472c
+  '@babel/core': 7.14.3
+  babel-loader: 8.2.2_227254ec0a6bae451cbdf7d5a47e8b1a
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.3.0
@@ -74,16 +74,16 @@ packages:
       source-map: 0.5.7
     dev: true
 
-  /@babel/core/7.14.2:
-    resolution: {integrity: sha512-OgC1mON+l4U4B4wiohJlQNUU3H73mpTyYY3j/c8U9dr9UagGGSm+WFpzjy/YLdoyjiG++c1kIDgxCo/mLwQJeQ==}
+  /@babel/core/7.14.3:
+    resolution: {integrity: sha512-jB5AmTKOCSJIZ72sd78ECEhuPiDMKlQdDI/4QRI6lzYATx5SSogS1oQA2AoPecRCknm30gHi2l+QVvNUu3wZAg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.12.13
-      '@babel/generator': 7.14.2
-      '@babel/helper-compilation-targets': 7.13.16_@babel+core@7.14.2
+      '@babel/generator': 7.14.3
+      '@babel/helper-compilation-targets': 7.13.16_@babel+core@7.14.3
       '@babel/helper-module-transforms': 7.14.2
       '@babel/helpers': 7.14.0
-      '@babel/parser': 7.14.2
+      '@babel/parser': 7.14.3
       '@babel/template': 7.12.13
       '@babel/traverse': 7.14.2
       '@babel/types': 7.14.2
@@ -111,8 +111,8 @@ packages:
       source-map: 0.5.7
     dev: true
 
-  /@babel/generator/7.14.2:
-    resolution: {integrity: sha512-OnADYbKrffDVai5qcpkMxQ7caomHOoEwjkouqnN2QhydAjowFAZcsdecFIRUBdb+ZcruwYE4ythYmF1UBZU5xQ==}
+  /@babel/generator/7.14.3:
+    resolution: {integrity: sha512-bn0S6flG/j0xtQdz3hsjJ624h3W0r3llttBMfyHX3YrZ/KtLYr15bjA0FXkgW7FpvrDuTuElXeVjiKlYRpnOFA==}
     dependencies:
       '@babel/types': 7.14.2
       jsesc: 2.5.2
@@ -128,13 +128,13 @@ packages:
       source-map: 0.5.7
     dev: false
 
-  /@babel/helper-compilation-targets/7.13.16_@babel+core@7.14.2:
+  /@babel/helper-compilation-targets/7.13.16_@babel+core@7.14.3:
     resolution: {integrity: sha512-3gmkYIrpqsLlieFwjkGgLaSHmhnvlAYzZLlYVjlW+QwI+1zE17kGxuJGmIqDQdYp56XdmGeD+Bswx0UTyG18xA==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
       '@babel/compat-data': 7.13.15
-      '@babel/core': 7.14.2
+      '@babel/core': 7.14.3
       '@babel/helper-validator-option': 7.12.17
       browserslist: 4.14.5
       semver: 6.3.0
@@ -371,8 +371,8 @@ packages:
     hasBin: true
     dev: true
 
-  /@babel/parser/7.14.2:
-    resolution: {integrity: sha512-IoVDIHpsgE/fu7eXBeRWt8zLbDrSvD7H1gpomOkPpBoEN8KCruCqSDdqo8dddwQQrui30KSvQBaMUOJiuFu6QQ==}
+  /@babel/parser/7.14.3:
+    resolution: {integrity: sha512-7MpZDIfI7sUC5zWo2+foJ50CSI5lcqDehZ0lVgIhSi4bFEk94fLAKlF3Q0nzSQQ+ca0lm+O6G9ztKVBeu8PMRQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dev: true
@@ -511,7 +511,7 @@ packages:
     resolution: {integrity: sha512-/7xxiGA57xMo/P2GVvdEumr8ONhFOhfgq2ihK3h1e6THqzTAkHbkXgB0xI9yeTfIUoH3+oAeHhqm/I43OTbbjA==}
     dependencies:
       '@babel/code-frame': 7.12.13
-      '@babel/parser': 7.14.2
+      '@babel/parser': 7.14.3
       '@babel/types': 7.14.2
     dev: true
 
@@ -555,10 +555,10 @@ packages:
     resolution: {integrity: sha512-TsdRgvBFHMyHOOzcP9S6QU0QQtjxlRpEYOy3mcCO5RgmC305ki42aSAmfZEMSSYBla2oZ9BMqYlncBaKmD/7iA==}
     dependencies:
       '@babel/code-frame': 7.12.13
-      '@babel/generator': 7.14.2
+      '@babel/generator': 7.14.3
       '@babel/helper-function-name': 7.14.2
       '@babel/helper-split-export-declaration': 7.12.13
-      '@babel/parser': 7.14.2
+      '@babel/parser': 7.14.3
       '@babel/types': 7.14.2
       debug: 4.1.1
       globals: 11.12.0
@@ -1343,14 +1343,14 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /babel-loader/8.2.2_fc66b4cb463f767a2f0870d314f4472c:
+  /babel-loader/8.2.2_227254ec0a6bae451cbdf7d5a47e8b1a:
     resolution: {integrity: sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==}
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
       webpack: '>=2'
     dependencies:
-      '@babel/core': 7.14.2
+      '@babel/core': 7.14.3
       find-cache-dir: 3.3.1
       loader-utils: 1.4.0
       make-dir: 3.1.0
