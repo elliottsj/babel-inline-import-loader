@@ -8,7 +8,7 @@ specifiers:
   babel-loader: 8.2.2
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
-  prettier: 2.4.0
+  prettier: 2.4.1
   webpack: 5.52.1
   webpack-cli: 4.8.0
   webpack-dev-server: 3.11.2
@@ -23,7 +23,7 @@ devDependencies:
   babel-loader: 8.2.2_16ff48a381fa3cd612ae60c01c46e0d7
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
-  prettier: 2.4.0
+  prettier: 2.4.1
   webpack: 5.52.1_webpack-cli@4.8.0
   webpack-cli: 4.8.0_c2277d086504b1974e2d8dac7265240a
   webpack-dev-server: 3.11.2_webpack-cli@4.8.0+webpack@5.52.1
@@ -1490,6 +1490,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -2433,6 +2434,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2555,6 +2557,7 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     deprecated: '"Please update to latest v2.3 or v2.2"'
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -3996,6 +3999,7 @@ packages:
 
   /nan/2.14.1:
     resolution: {integrity: sha512-isWHgVjnFjh2x2yuJ/tj3JbwoHu3UC2dX5G/88Cm24yB6YopVgxvBObDY7n5xW6ExmFhJpSEQqFPvq9zaXc8Jw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -4049,6 +4053,7 @@ packages:
 
   /node-notifier/8.0.0:
     resolution: {integrity: sha512-46z7DUmcjoYdaWyXouuFNNfUo6eFa94t23c53c+lG/9Cvauk4a98rAUp9672X5dxGdQmLpPzTxzu8f/OeEPaFA==}
+    requiresBuild: true
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
@@ -4417,8 +4422,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.4.0:
-    resolution: {integrity: sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==}
+  /prettier/2.4.1:
+    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
