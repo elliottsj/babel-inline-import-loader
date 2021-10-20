@@ -5,7 +5,7 @@ specifiers:
   '@babel/parser': ^7.9.6
   '@babel/traverse': ^7.9.6
   '@babel/types': ^7.9.6
-  babel-loader: 8.2.2
+  babel-loader: 8.2.3
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.4.1
@@ -20,7 +20,7 @@ dependencies:
 
 devDependencies:
   '@babel/core': 7.15.8
-  babel-loader: 8.2.2_6e804b39b600d1b7ef8697a3041a40e8
+  babel-loader: 8.2.3_6e804b39b600d1b7ef8697a3041a40e8
   babel-plugin-inline-import: 3.0.0
   jest: 26.6.3
   prettier: 2.4.1
@@ -1384,8 +1384,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /babel-loader/8.2.2_6e804b39b600d1b7ef8697a3041a40e8:
-    resolution: {integrity: sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==}
+  /babel-loader/8.2.3_6e804b39b600d1b7ef8697a3041a40e8:
+    resolution: {integrity: sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==}
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
